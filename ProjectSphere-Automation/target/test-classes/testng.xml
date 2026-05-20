@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ProjectSphere Full Suite" verbose="1" thread-count="1">
+
+    <listeners>
+        <listener class-name="com.projectsphere.automation.utils.ExtentReportListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env"     value="dev"/>
+
+    <!-- ── Smoke Tests ──────────────────────────────────────────────────── -->
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.projectsphere.automation.tests.LoginTests"/>
+            <class name="com.projectsphere.automation.tests.AdminTests"/>
+            <class name="com.projectsphere.automation.tests.PMTests"/>
+            <class name="com.projectsphere.automation.tests.DeveloperTests"/>
+        </classes>
+    </test>
+
+    <!-- ── Regression Tests ─────────────────────────────────────────────── -->
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.projectsphere.automation.tests.LoginTests"/>
+            <class name="com.projectsphere.automation.tests.AdminTests"/>
+            <class name="com.projectsphere.automation.tests.PMTests"/>
+            <class name="com.projectsphere.automation.tests.DeveloperTests"/>
+        </classes>
+    </test>
+
+</suite>

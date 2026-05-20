@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ProjectSphere Parallel Suite" verbose="1" parallel="methods" thread-count="4">
+
+    <listeners>
+        <listener class-name="com.projectsphere.automation.utils.ExtentReportListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env"     value="dev"/>
+
+    <!-- ── Login Tests ──────────────────────────────────────────────────── -->
+    <test name="Login Tests" parallel="methods" thread-count="3">
+        <classes>
+            <class name="com.projectsphere.automation.tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <!-- ── Admin Tests ──────────────────────────────────────────────────── -->
+    <test name="Admin Tests" parallel="methods" thread-count="4">
+        <classes>
+            <class name="com.projectsphere.automation.tests.AdminTests"/>
+        </classes>
+    </test>
+
+    <!-- ── PM Tests ─────────────────────────────────────────────────────── -->
+    <test name="PM Tests" parallel="methods" thread-count="3">
+        <classes>
+            <class name="com.projectsphere.automation.tests.PMTests"/>
+        </classes>
+    </test>
+
+    <!-- ── Developer Tests ──────────────────────────────────────────────── -->
+    <test name="Developer Tests" parallel="methods" thread-count="4">
+        <classes>
+            <class name="com.projectsphere.automation.tests.DeveloperTests"/>
+        </classes>
+    </test>
+
+</suite>

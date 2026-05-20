@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-19T23:58:17 IST" name="Surefire suite" finished-at="2026-05-19T23:59:02 IST" duration-ms="45659">
+    <groups>
+      <group name="regression">
+        <method signature="PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" name="TC040_pmCanEditOwnProjectDetails" class="com.projectsphere.automation.tests.PMTests"/>
+      </group> <!-- regression -->
+      <group name="pm">
+        <method signature="PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" name="TC040_pmCanEditOwnProjectDetails" class="com.projectsphere.automation.tests.PMTests"/>
+      </group> <!-- pm -->
+    </groups>
+    <test started-at="2026-05-19T23:58:17 IST" name="Surefire test" finished-at="2026-05-19T23:59:02 IST" duration-ms="45659">
+      <class name="com.projectsphere.automation.tests.PMTests">
+        <test-method is-config="true" signature="initReports()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:16 IST" name="initReports" finished-at="2026-05-19T23:58:17 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReports -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:17 IST" name="setUp" finished-at="2026-05-19T23:58:45 IST" duration-ms="28226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:45 IST" name="TC040_pmCanEditOwnProjectDetails" description="PS_TC040 - Verify PM can edit their own project details" finished-at="2026-05-19T23:58:56 IST" duration-ms="11230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC040_pmCanEditOwnProjectDetails -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:56 IST" name="tearDown" finished-at="2026-05-19T23:59:02 IST" duration-ms="6142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC040_pmCanEditOwnProjectDetails status=SUCCESS method=PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:59:03 IST" name="flushReports" finished-at="2026-05-19T23:59:03 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.projectsphere.automation.tests.PMTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

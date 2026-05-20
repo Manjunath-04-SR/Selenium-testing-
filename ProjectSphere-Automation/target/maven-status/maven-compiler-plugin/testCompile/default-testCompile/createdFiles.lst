@@ -1,0 +1,4 @@
+com\projectsphere\automation\tests\LoginTests.class
+com\projectsphere\automation\tests\AdminTests.class
+com\projectsphere\automation\tests\PMTests.class
+com\projectsphere\automation\tests\DeveloperTests.class
