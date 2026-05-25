@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">ProjectSphere Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">2026-05-19 23:58:16</span></a>
+<a href="#"><span class="badge badge-primary">2026-05-20 16:00:14</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">pm</a><a class="dropdown-item" href="#">regression</a>
+<a class="dropdown-item" href="#">login</a><a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">regression</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="pm regression"
+          tag="login regression smoke"
           device="">
           <div class="test-detail">
-            <p class="name">TC040_pmCanEditOwnProjectDetails</p>
+            <p class="name">TC002_pmValidLoginRedirectsToDashboard</p>
             <p class="text-sm">
-              <span>11:58:45 pm</span> / <span>00:00:11:247</span>
+              <span>4:00:46 pm</span> / <span>00:00:07:066</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,18 +100,19 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC040_pmCanEditOwnProjectDetails</h5>
-<span class='badge badge-success'>05.19.2026 11:58:45 pm</span>
-<span class='badge badge-danger'>05.19.2026 11:58:56 pm</span>
-<span class='badge badge-default'>00:00:11:247</span>
+<h5 class="test-status text-pass">TC002_pmValidLoginRedirectsToDashboard</h5>
+<span class='badge badge-success'>05.20.2026 4:00:46 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:00:53 pm</span>
+<span class='badge badge-default'>00:00:07:066</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">pm</span>
-<span class="badge badge-pill badge-default">regression</span></div>
-<div class="m-t-10 m-l-5">PS_TC040 - Verify PM can edit their own project details</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">PS_TC002 - Verify successful login for Project Manager role with valid credentials</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -119,37 +120,485 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:58:49 pm</td>
+        <td>4:00:48 pm</td>
         <td>
-          Test data: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC040, TEST_DESCRIPTION=Detailed Validation of Documents library – upload, replace existing document and delete., DESIGNER=Suvetha, TEST_TYPE=Functional, Positive, FRD_PARAGRAPH_NUMBER=2.4.9, TEST_DATA=A valid document file (PDF or Word) for upload; a second file for the replace operation, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=Navigate to Documents and verify the library opens with any existing project documents listed., STEP_EXPECTED_RESULTS=Documents library is displayed; existing uploaded documents are visible with their names., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=Log in as Admin and click the Logout button., STEP_1_EXPECTED=Admin session is terminated and the browser is redirected to the Login page., STEP_2_DESC=Upload a new document and verify it appears in the library., STEP_2_EXPECTED=New document is uploaded successfully and its filename is visible in the document list., STEP_3_DESC=Select the replace/update option on the same document and attach a newer version of the file., STEP_3_EXPECTED=Document is replaced; the library shows only the new version and the previous version is no longer accessible., STEP_4_DESC=Delete the document and confirm the deletion when prompted., STEP_4_EXPECTED=Document is permanently removed from the library and no longer appears in the document list.}
+          Test data loaded: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC002, TEST_DESCRIPTION=Detailed Validation of Sign In with Invalid Credentials: Ensures the system blocks access and shows an error message., DESIGNER=Manjunath, TEST_TYPE=UI, Functional, Negative, FRD_PARAGRAPH_NUMBER=2.1.1, TEST_DATA=Wrong password, non-existent email, COMPLEXITY=Simple, STEP_NUM=1, STEP_DESCRIPTION=Enter a valid email but an incorrect password and click Sign In., STEP_EXPECTED_RESULTS=System does not authenticate the user and an appropriate error message is displayed., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=On the login screen click the Forgot Password option., STEP_1_EXPECTED=Forgot Password screen or dialog opens successfully., STEP_2_DESC=Enter a non-existent email address and any password and click Sign In., STEP_2_EXPECTED=System does not authenticate the user and an appropriate error message is displayed., STEP_3_DESC=Leave both Email and Password fields blank and click Sign In., STEP_3_EXPECTED=System prevents submission and displays mandatory field error messages.}
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:58:55 pm</td>
+        <td>4:00:53 pm</td>
         <td>
-          Editing project name, description and status
+          Verifying PM-specific menu items are visible
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:00:53 pm</td>
+        <td>
+          PM login successful; redirected to PM Dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:00:53 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC002_pmValidLoginRedirectsToDashboard</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="login regression smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC001_adminValidLoginRedirectsToDashboard</p>
+            <p class="text-sm">
+              <span>4:00:46 pm</span> / <span>00:00:07:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC001_adminValidLoginRedirectsToDashboard</h5>
+<span class='badge badge-success'>05.20.2026 4:00:46 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:00:53 pm</span>
+<span class='badge badge-default'>00:00:07:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">PS_TC001 - Verify successful login for Admin role with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:00:48 pm</td>
+        <td>
+          Test data loaded: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC001, TEST_DESCRIPTION=Detailed Validation of Sign In with Valid Credentials: Verifies role-based redirection for all three roles., DESIGNER=Manjunath, TEST_TYPE=UI, Functional, Positive, FRD_PARAGRAPH_NUMBER=2.1.1, TEST_DATA=Valid Admin / PM / Developer credentials, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=Open the ProjectSphere application URL in the browser and wait for the login page to load., STEP_EXPECTED_RESULTS=Login page is rendered with Email field, Password field and Sign In button visible., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=Enter a valid email but an incorrect password and click Sign In., STEP_1_EXPECTED=System does not authenticate the user and an appropriate error message is displayed., STEP_2_DESC=Enter valid Admin email and password and click Sign In., STEP_2_EXPECTED=System authenticates the admin and redirects to the Admin Dashboard without errors., STEP_3_DESC=Log out, enter valid PM email and password and click Sign In., STEP_3_EXPECTED=System authenticates the PM and redirects to the PM Dashboard., STEP_4_DESC=Log out, enter valid Developer email and password and click Sign In., STEP_4_EXPECTED=System authenticates the developer and redirects to the Developer Dashboard.}
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:58:56 pm</td>
+        <td>4:00:48 pm</td>
         <td>
-          Verifying updated project reflects in My Projects list
+          Login page is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:00:53 pm</td>
+        <td>
+          Verifying Admin-specific nav menu options are visible
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:58:56 pm</td>
+        <td>4:00:53 pm</td>
         <td>
-          PM's project details edited and saved successfully
+          Admin login successful; redirected to Admin Dashboard
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:58:56 pm</td>
+        <td>4:00:53 pm</td>
         <td>
-          <span class='badge white-text green'>TEST PASSED: TC040_pmCanEditOwnProjectDetails</span>
+          <span class='badge white-text green'>TEST PASSED: TC001_adminValidLoginRedirectsToDashboard</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="login regression smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC003_developerValidLoginRedirectsToDashboard</p>
+            <p class="text-sm">
+              <span>4:00:46 pm</span> / <span>00:00:13:098</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC003_developerValidLoginRedirectsToDashboard</h5>
+<span class='badge badge-success'>05.20.2026 4:00:46 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:00:59 pm</span>
+<span class='badge badge-default'>00:00:13:098</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">PS_TC003 - Verify successful login for Developer role with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:00:48 pm</td>
+        <td>
+          Test data loaded: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC003, TEST_DESCRIPTION=Detailed Validation of Forgot Password Flow: Verifies a user can reset their password and sign in with the new one., DESIGNER=Manjunath, TEST_TYPE=Functional, Positive, FRD_PARAGRAPH_NUMBER=2.1.2, TEST_DATA=Registered email, new valid password, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=On the login screen click the Forgot Password option., STEP_EXPECTED_RESULTS=Forgot Password screen or dialog opens successfully., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=Sign in as Administrator and wait for the Admin Dashboard to load., STEP_1_EXPECTED=Admin Dashboard is displayed with all sections visible., STEP_2_DESC=Enter a registered email address and submit the reset request., STEP_2_EXPECTED=System accepts the email and initiates the password reset flow., STEP_3_DESC=Set a new password for the registered email and confirm., STEP_3_EXPECTED=New password is accepted and saved without errors., STEP_4_DESC=Return to the login screen, enter the registered email and new password, and click Sign In., STEP_4_EXPECTED=User is authenticated and redirected to the correct role-based dashboard.}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:00:59 pm</td>
+        <td>
+          Verifying developer nav options are visible (Board, Backlog, Timeline, etc.)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:00:59 pm</td>
+        <td>
+          Developer login successful; redirected to Developer Dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:00:59 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC003_developerValidLoginRedirectsToDashboard</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="login regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC005_invalidCredentialsShowError</p>
+            <p class="text-sm">
+              <span>4:01:28 pm</span> / <span>00:00:02:591</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC005_invalidCredentialsShowError</h5>
+<span class='badge badge-success'>05.20.2026 4:01:28 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:01:31 pm</span>
+<span class='badge badge-default'>00:00:02:591</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PS_TC005 - Verify error message on invalid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:28 pm</td>
+        <td>
+          Test data: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC005, TEST_DESCRIPTION=Detailed Validation of Add Project dialog (Admin) – mandatory fields and successful creation., DESIGNER=Manjunath, TEST_TYPE=UI, Functional, Negative, FRD_PARAGRAPH_NUMBER=2.2.7, TEST_DATA=Blank name, valid project data, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=From Admin Dashboard open the Add Project dialog., STEP_EXPECTED_RESULTS=Add Project dialog is displayed with all input fields visible., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=From Admin Dashboard open the Add Team Member dialog., STEP_1_EXPECTED=Dialog is displayed with both Bulk Upload and Manual Registration options., STEP_2_DESC=Leave Project Name blank and click Create Project., STEP_2_EXPECTED=System blocks submission and displays a mandatory field error for Project Name., STEP_3_DESC=Fill in Project Name, Description, set Status to IN_PROGRESS and select a Domain., STEP_3_EXPECTED=All fields accept input without errors., STEP_4_DESC=Optionally select a Project Manager from the dropdown and click Create Project., STEP_4_EXPECTED=Dialog closes, new project appears in the Projects list with the correct details., STEP_5_DESC=Open Add Project dialog again and click Close without filling any field., STEP_5_EXPECTED=Dialog closes without creating any project.}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:29 pm</td>
+        <td>
+          Entered unregistered email and incorrect password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:31 pm</td>
+        <td>
+          Verifying page does not redirect and fields remain editable
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:01:31 pm</td>
+        <td>
+          Invalid credentials correctly blocked with error message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:01:31 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC005_invalidCredentialsShowError</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="login regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC004_blankCredentialsShowValidationError</p>
+            <p class="text-sm">
+              <span>4:01:40 pm</span> / <span>00:00:01:035</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC004_blankCredentialsShowValidationError</h5>
+<span class='badge badge-success'>05.20.2026 4:01:40 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:01:41 pm</span>
+<span class='badge badge-default'>00:00:01:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PS_TC004 - Verify error message on blank email and password submission</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:40 pm</td>
+        <td>
+          Test data: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC004, TEST_DESCRIPTION=Detailed Validation of Admin Dashboard Summary Counts and Navigation: Verifies counts and quick-access links., DESIGNER=Manjunath, TEST_TYPE=UI, Positive, FRD_PARAGRAPH_NUMBER=2.2.1, TEST_DATA=N/A, COMPLEXITY=Simple, STEP_NUM=1, STEP_DESCRIPTION=Sign in as Administrator and wait for the Admin Dashboard to load., STEP_EXPECTED_RESULTS=Admin Dashboard is displayed with all sections visible., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=From Admin Dashboard open the Add Project dialog., STEP_1_EXPECTED=Add Project dialog is displayed with all input fields visible., STEP_2_DESC=Verify the four summary count tiles: Total Projects, Project Managers, Team Members, and Teams., STEP_2_EXPECTED=Each tile shows a numeric count that matches the actual data in the system., STEP_3_DESC=Click the quick-navigation shortcut for Projects management., STEP_3_EXPECTED=System navigates to the Projects management area without errors., STEP_4_DESC=Return to the dashboard and click the shortcut for Project Managers., STEP_4_EXPECTED=System navigates to the Project Managers management area.}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:41 pm</td>
+        <td>
+          Submitted blank email and password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:41 pm</td>
+        <td>
+          Verifying error message is user-friendly and specific
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:01:41 pm</td>
+        <td>
+          Blank credentials correctly prevented with validation error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:01:41 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC004_blankCredentialsShowValidationError</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="login regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC006_forgotPasswordResetFlowSucceeds</p>
+            <p class="text-sm">
+              <span>4:01:51 pm</span> / <span>00:00:20:230</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC006_forgotPasswordResetFlowSucceeds</h5>
+<span class='badge badge-success'>05.20.2026 4:01:51 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:02:11 pm</span>
+<span class='badge badge-default'>00:00:20:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PS_TC006 - Verify Forgot Password reset flow from login screen</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:51 pm</td>
+        <td>
+          Test data: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC006, TEST_DESCRIPTION=Detailed Validation of Add Team Member dialog – bulk upload and manual registration., DESIGNER=Manjunath, TEST_TYPE=Functional, Positive, FRD_PARAGRAPH_NUMBER=2.2.5, TEST_DATA=Valid .xlsx file, manual member data, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=From Admin Dashboard open the Add Team Member dialog., STEP_EXPECTED_RESULTS=Dialog is displayed with both Bulk Upload and Manual Registration options., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=From Admin Dashboard open the Add Project Manager dialog., STEP_1_EXPECTED=Dialog is displayed with Employee ID, Phone Number, First Name, Last Name, Email and Password fields., STEP_2_DESC=Select the bulk upload option and attach a valid .xlsx file with team member data, then click upload., STEP_2_EXPECTED=All members in the file are registered and appear in the team members list., STEP_3_DESC=Open the dialog again, choose manual entry and fill in Employee ID, Phone Number, First Name, Last Name, Email and Password., STEP_3_EXPECTED=All fields accept the entered data without errors., STEP_4_DESC=Click Register / Save., STEP_4_EXPECTED=New team member is created and visible in the members list., STEP_5_DESC=Open the dialog and click Close without filling any field., STEP_5_EXPECTED=Dialog closes without creating any record.}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:51 pm</td>
+        <td>
+          Entered email on login page: admin@projectsphere.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:51 pm</td>
+        <td>
+          Reset Password page is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:52 pm</td>
+        <td>
+          Entered new password and confirm password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:01:52 pm</td>
+        <td>
+          Clicked Reset Password button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:02:11 pm</td>
+        <td>
+          Password reset flow completed and login verified
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:02:11 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC006_forgotPasswordResetFlowSucceeds</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="login regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC007_forgotPasswordUnregisteredEmailShowsError</p>
+            <p class="text-sm">
+              <span>4:02:05 pm</span> / <span>00:00:01:923</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC007_forgotPasswordUnregisteredEmailShowsError</h5>
+<span class='badge badge-success'>05.20.2026 4:02:05 pm</span>
+<span class='badge badge-danger'>05.20.2026 4:02:07 pm</span>
+<span class='badge badge-default'>00:00:01:923</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">login</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PS_TC007 - Verify Forgot Password with an unregistered email address</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:02:05 pm</td>
+        <td>
+          Test data: {GROUP=ProjectSphere, TEST_CASE_ID=PS_TC007, TEST_DESCRIPTION=Detailed Validation of Add Project Manager dialog – mandatory fields and successful creation., DESIGNER=Manjunath, TEST_TYPE=UI, Functional, Negative, FRD_PARAGRAPH_NUMBER=2.2.6, TEST_DATA=Blank fields, valid PM data, COMPLEXITY=Medium, STEP_NUM=1, STEP_DESCRIPTION=From Admin Dashboard open the Add Project Manager dialog., STEP_EXPECTED_RESULTS=Dialog is displayed with Employee ID, Phone Number, First Name, Last Name, Email and Password fields., ACTUAL_RESULT=, STATUS=, DEFECT=, STEP_1_DESC=From the Projects list click any project to open Edit Project Details., STEP_1_EXPECTED=Edit Project Details screen opens pre-populated with the project's current data., STEP_2_DESC=Leave all fields blank and attempt to save., STEP_2_EXPECTED=System blocks submission and displays mandatory field errors for all required fields., STEP_3_DESC=Fill in all fields with valid data and click Save., STEP_3_EXPECTED=Dialog closes and the new PM appears in the Project Managers list., STEP_4_DESC=Open the dialog and click Close without filling any field., STEP_4_EXPECTED=Dialog closes without creating any record.}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:02:06 pm</td>
+        <td>
+          Entered unregistered email: unknown@ps.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:02:06 pm</td>
+        <td>
+          App navigated to reset page without validating email (known defect)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:02:06 pm</td>
+        <td>
+          Entered new password and confirm password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:02:06 pm</td>
+        <td>
+          Clicked Reset Password button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:02:07 pm</td>
+        <td>
+          Unregistered email correctly rejected with error on Reset Password page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:02:07 pm</td>
+        <td>
+          <span class='badge white-text green'>TEST PASSED: TC007_forgotPasswordUnregisteredEmailShowsError</span>
         </td>
       </tr>
   </tbody>
@@ -170,22 +619,22 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>7</span>
 </span>
-<p class="name">pm</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">login</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>pm</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>login</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -198,9 +647,51 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:58:45 pm</td>
+<td>16:00:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>TC040_pmCanEditOwnProjectDetails</a>
+<a href="#" class="linked" test-id='1' id='1'>TC002_pmValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>TC001_adminValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC003_developerValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>TC005_invalidCredentialsShowError</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>TC004_blankCredentialsShowValidationError</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>TC006_forgotPasswordResetFlowSucceeds</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:02:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>TC007_forgotPasswordUnregisteredEmailShowsError</a>
 </td>
 </tr>
 </tbody>
@@ -210,15 +701,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">regression</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">smoke</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -231,9 +722,98 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:58:45 pm</td>
+<td>16:00:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>TC040_pmCanEditOwnProjectDetails</a>
+<a href="#" class="linked" test-id='1' id='1'>TC002_pmValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>TC001_adminValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC003_developerValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TC002_pmValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>TC001_adminValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC003_developerValidLoginRedirectsToDashboard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>TC005_invalidCredentialsShowError</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>TC004_blankCredentialsShowValidationError</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>TC006_forgotPasswordResetFlowSucceeds</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:02:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>TC007_forgotPasswordUnregisteredEmailShowsError</a>
 </td>
 </tr>
 </tbody>
@@ -253,19 +833,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>2026-05-19 23:58:16</h3>
+<h3>2026-05-20 16:00:14</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>2026-05-19 23:59:03</h3>
+<h3>2026-05-20 16:02:17</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -288,7 +868,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<b>7</b> tests passed
 </small>
 </div>
 <div>
@@ -310,10 +890,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='40%'><b>2</b> events passed</small></div>
+<div><small data-tooltip='37%'><b>14</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>3</b> others
+<b data-tooltip='%'>23</b> others
 </small>
 </div>
 </div>
@@ -329,7 +909,7 @@
 </div></div>
 <script>
 var timeline = {
-"TC040_pmCanEditOwnProjectDetails":11.247
+"TC002_pmValidLoginRedirectsToDashboard":7.066,"TC001_adminValidLoginRedirectsToDashboard":7,"TC003_developerValidLoginRedirectsToDashboard":13.098,"TC005_invalidCredentialsShowError":2.591,"TC004_blankCredentialsShowValidationError":1.035,"TC006_forgotPasswordResetFlowSucceeds":20.23,"TC007_forgotPasswordUnregisteredEmailShowsError":1.923
 };
 </script>
 <div class="row">
@@ -339,8 +919,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>pm</td>
-<td>1</td>
+<td>login</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -348,7 +936,7 @@ var timeline = {
 </tr>
 <tr>
 <td>regression</td>
-<td>1</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -397,7 +985,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 7,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -414,11 +1002,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
+passEvents: 14,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 3
+infoEvents: 23
 };
 </script>        </div>
       </div>

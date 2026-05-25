@@ -1,4 +1,10 @@
-com\projectsphere\automation\tests\LoginTests.class
+com\projectsphere\automation\cucumber\stepdefs\AdminSteps.class
+com\projectsphere\automation\cucumber\hooks\CucumberHooks.class
+com\projectsphere\automation\cucumber\stepdefs\PMSteps.class
+com\projectsphere\automation\cucumber\context\ScenarioContext.class
 com\projectsphere\automation\tests\AdminTests.class
-com\projectsphere\automation\tests\PMTests.class
+com\projectsphere\automation\cucumber\stepdefs\LoginSteps.class
 com\projectsphere\automation\tests\DeveloperTests.class
+com\projectsphere\automation\tests\LoginTests.class
+com\projectsphere\automation\cucumber\runner\CucumberRunner.class
+com\projectsphere\automation\tests\PMTests.class

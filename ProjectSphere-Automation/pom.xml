@@ -24,6 +24,7 @@
         <logback.version>1.5.6</logback.version>
         <commons-io.version>2.16.1</commons-io.version>
         <surefire.version>3.3.0</surefire.version>
+        <cucumber.version>7.18.0</cucumber.version>
         <!-- Default values – override via -Dbrowser=firefox etc. -->
         <browser>chrome</browser>
         <env>dev</env>
@@ -90,6 +91,24 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
+        </dependency>
+
+        <!-- ── Cucumber BDD ──────────────────────────────────────────────── -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <!-- PicoContainer: dependency injection to share state between step defs -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
 
