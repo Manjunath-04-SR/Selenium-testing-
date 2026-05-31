@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>TestNG:  Cucumber BDD Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cucumber BDD Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 25 22:22:39 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>642 seconds (642055 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can create a new team", "Admin Dashboard"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1467740330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1467740330'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+</pre></div></td>
+<td>97</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PM can open the Create Project dialog", "Project Manager Dashboard"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+	at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+	at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664738820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664738820'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+	at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+	at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+</pre></div></td>
+<td>52</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can open the Create Team dialog", "Admin Dashboard"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1169015699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1169015699'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+</pre></div></td>
+<td>95</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can navigate to Manage Teams", "Admin Dashboard"</td>
+<td></td>
+<td>31</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PM can create a new project and it appears in My Projects", "Project Manager Dashboard"</td>
+<td></td>
+<td>71</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin logs in with valid credentials", "User Login"</td>
+<td></td>
+<td>32</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin dashboard is displayed with KPI tiles", "Admin Dashboard"</td>
+<td></td>
+<td>35</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PM can navigate to My Projects", "Project Manager Dashboard"</td>
+<td></td>
+<td>32</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can navigate to Manage Projects", "Admin Dashboard"</td>
+<td></td>
+<td>32</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page displays all required fields", "User Login"</td>
+<td></td>
+<td>29</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login fails with invalid credentials", "User Login"</td>
+<td></td>
+<td>32</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PM dashboard is displayed with quick action cards", "Project Manager Dashboard"</td>
+<td></td>
+<td>34</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Project Manager logs in with valid credentials", "User Login"</td>
+<td></td>
+<td>31</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+<tr>
+<td title='com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.projectsphere.automation.cucumber.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PM can navigate to My Teams", "Project Manager Dashboard"</td>
+<td></td>
+<td>32</td>
+<td>com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc</td></tr>
+</table><p>
+</body>
+</html>

@@ -88,6 +88,10 @@ public class PMSteps {
 
     @When("the PM creates a project with name {string}")
     public void thePMCreatesAProjectWithName(String projectName) {
+        // Self-contained step: opens the dialog first, then fills and submits
+        // PM is on the dashboard at this point (via Background: Given the PM is logged in)
+        PMDashboardPage dashboard = new PMDashboardPage(context.getDriver());
+        dashboard.clickAddProject();  // Open the Create Project dialog
         CreateProjectDialog dialog = new CreateProjectDialog(context.getDriver());
         PMDashboardPage dashboardAfter = dialog
                 .enterProjectName(projectName)

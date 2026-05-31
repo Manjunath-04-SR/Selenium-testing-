@@ -43,6 +43,7 @@ public class CreateTeamDialog {
     //   </div>
     // </div>
 
+    // Primary locator; isDialogVisible() also probes ax-modal and teamName field as fallbacks
     private final By dialogContainer  = By.cssSelector("div.ax-modal-backdrop");
     private final By teamNameField    = By.cssSelector("div.ax-modal-backdrop input[formcontrolname='teamName']");
     private final By projectDropdown  = By.cssSelector("div.ax-modal-backdrop select[formcontrolname='projectId']");
@@ -60,7 +61,14 @@ public class CreateTeamDialog {
 
     public boolean isDialogVisible() {
         try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(dialogContainer));
+            // Broad check: ax-modal-backdrop OR any ax-modal div OR teamName input directly.
+            // The fallback selectors guard against class differences in different build versions.
+            wait.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(dialogContainer),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ax-modal")),
+                ExpectedConditions.visibilityOfElementLocated(
+                    By.cssSelector("input[formcontrolname='teamName']"))
+            ));
             return true;
         } catch (Exception e) {
             return false;

@@ -1,58 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-19T23:58:17 IST" name="Surefire suite" finished-at="2026-05-19T23:59:02 IST" duration-ms="45659">
+  <suite started-at="2026-05-25T22:22:39 IST" name="ProjectSphere Cucumber BDD Suite" finished-at="2026-05-25T22:33:21 IST" duration-ms="642055">
     <groups>
-      <group name="regression">
-        <method signature="PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" name="TC040_pmCanEditOwnProjectDetails" class="com.projectsphere.automation.tests.PMTests"/>
-      </group> <!-- regression -->
-      <group name="pm">
-        <method signature="PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" name="TC040_pmCanEditOwnProjectDetails" class="com.projectsphere.automation.tests.PMTests"/>
-      </group> <!-- pm -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-19T23:58:17 IST" name="Surefire test" finished-at="2026-05-19T23:59:02 IST" duration-ms="45659">
-      <class name="com.projectsphere.automation.tests.PMTests">
-        <test-method is-config="true" signature="initReports()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:16 IST" name="initReports" finished-at="2026-05-19T23:58:17 IST" duration-ms="309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initReports -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:17 IST" name="setUp" finished-at="2026-05-19T23:58:45 IST" duration-ms="28226" status="PASS">
+    <test started-at="2026-05-25T22:22:39 IST" name="Cucumber BDD Tests" finished-at="2026-05-25T22:33:21 IST" duration-ms="642055">
+      <class name="com.projectsphere.automation.cucumber.runner.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:22:39 IST" name="setUpClass" finished-at="2026-05-25T22:22:39 IST" duration-ms="332" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[org.testng.TestRunner@ce0bbd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:22:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:23:15 IST" duration-ms="35843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin dashboard is displayed with KPI tiles"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[dev]]>
+                <![CDATA["Admin Dashboard"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:45 IST" name="TC040_pmCanEditOwnProjectDetails" description="PS_TC040 - Verify PM can edit their own project details" finished-at="2026-05-19T23:58:56 IST" duration-ms="11230" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC040_pmCanEditOwnProjectDetails -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:58:56 IST" name="tearDown" finished-at="2026-05-19T23:59:02 IST" duration-ms="6142" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:23:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:23:47 IST" duration-ms="32432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC040_pmCanEditOwnProjectDetails status=SUCCESS method=PMTests.TC040_pmCanEditOwnProjectDetails()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4] output={null}]]]>
+                <![CDATA["Admin can navigate to Manage Projects"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Dashboard"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:com.projectsphere.automation.tests.PMTests@3b0090a4]" started-at="2026-05-19T23:59:03 IST" name="flushReports" finished-at="2026-05-19T23:59:03 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:23:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:24:19 IST" duration-ms="31965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin can navigate to Manage Teams"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Dashboard"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.projectsphere.automation.tests.PMTests -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:24:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:25:54 IST" duration-ms="95090" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin can open the Create Team dialog"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:25:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:27:32 IST" duration-ms="97353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin can create a new team"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:27:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:28:01 IST" duration-ms="29195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page displays all required fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:28:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:28:33 IST" duration-ms="32446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin logs in with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:28:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:29:05 IST" duration-ms="31614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Project Manager logs in with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:29:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:29:38 IST" duration-ms="32584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login fails with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:29:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:30:12 IST" duration-ms="34088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PM dashboard is displayed with quick action cards"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Project Manager Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:30:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:30:44 IST" duration-ms="32253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PM can navigate to My Projects"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Project Manager Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:30:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:31:16 IST" duration-ms="32453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PM can navigate to My Teams"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Project Manager Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:31:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:32:09 IST" duration-ms="52657" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PM can open the Create Project dialog"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Project Manager Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:32:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-25T22:33:21 IST" duration-ms="71465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PM can create a new project and it appears in My Projects"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Project Manager Dashboard"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.projectsphere.automation.cucumber.runner.CucumberRunner@78ffe6dc]" started-at="2026-05-25T22:33:21 IST" name="tearDownClass" finished-at="2026-05-25T22:33:21 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.projectsphere.automation.cucumber.runner.CucumberRunner -->
+    </test> <!-- Cucumber BDD Tests -->
+  </suite> <!-- ProjectSphere Cucumber BDD Suite -->
 </testng-results>

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="642.759" tests="14" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation\target\test-classes;C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation\target\classes;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\2479309\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\2479309\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\2479309\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\2479309\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2479309\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\2479309\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\2479309\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\2479309\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\2479309\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\2479309\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\2479309\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\2479309\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\2479309\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\2479309\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\2479309\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\2479309\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\2479309\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\2479309\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\2479309\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\2479309\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\2479309\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\2479309\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\2479309\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\2479309\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\2479309\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\2479309\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\2479309\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\2479309\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\2479309\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\2479309\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\2479309\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\2479309\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\2479309\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\2479309\AppData\Local\Temp\surefire5709785437894701713\surefirebooter-20260525222237461_3.jar C:\Users\2479309\AppData\Local\Temp\surefire5709785437894701713 2026-05-25T22-22-37_180-jvmRun1 surefire-20260525222237461_1tmp surefire_0-20260525222237461_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation\target\test-classes;C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation\target\classes;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\2479309\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\2479309\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\2479309\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\2479309\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2479309\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\2479309\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\2479309\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\2479309\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\2479309\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\2479309\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\2479309\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\2479309\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\2479309\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\2479309\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\2479309\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\2479309\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\2479309\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\2479309\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\2479309\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\2479309\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\2479309\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\2479309\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\2479309\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\2479309\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\2479309\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\2479309\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\2479309\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\2479309\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\2479309\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\2479309\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\2479309\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\2479309\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\2479309\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\2479309\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\2479309\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\2479309\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\2479309\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\2479309\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\2479309\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\2479309\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\2479309\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\2479309"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="suiteFile" value="src/test/resources/cucumber-testng.xml"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\2479309\AppData\Local\Temp\surefire5709785437894701713\surefirebooter-20260525222237461_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
+    <property name="user.name" value="2479309"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\2479309\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\2479309\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.2.4"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value="dev"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\2479309\AppData\Local\Microsoft\WindowsApps;;C:\Users\2479309\AppData\Roaming\npm;C:\Users\2479309\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\2479309\.m2\repository"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Admin dashboard is displayed with KPI tiles&quot;, &quot;Admin Dashboard&quot;](1)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="35.841">
+    <system-out><![CDATA[22:22:38.881 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\2479309\Desktop\Project Sphere\ProjectSphere-Automation\src\test\resources\cucumber-testng.xml"
+
+@smoke @admin @regression
+Scenario: Admin dashboard is displayed with KPI tiles # src/test/resources/features/admin.feature:10
+22:22:39.805 [main] INFO com.projectsphere.automation.utils.ConfigReader -- Loading configuration from: config.properties
+22:22:39.807 [main] INFO com.projectsphere.automation.utils.ConfigReader -- Configuration loaded successfully for env: dev
+22:22:39.808 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin dashboard is displayed with KPI tiles] ===
+22:22:39.824 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:22:40.314 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 22:25:52 25/05/2026 IST)
+22:22:40.317 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:22:40.318 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:22:40.362 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:22:40.363 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:22:43.650 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:22:45.143 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:23:05.749 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:23:06.083 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:23:06.118 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:23:06.126 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:23:06.219 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:23:06.320 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:23:06.667 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:23:06.722 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:23:06.984 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:23:07.267 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:23:07.267 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting Admin login with: admin@projectsphere.com
+22:23:07.271 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:23:08.608 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:23:08.617 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin logged in successfully
+  Given the admin is logged in                        # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminIsLoggedIn()
+22:23:08.617 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:23:08.686 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:23:08.686 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Admin dashboard KPI tiles verified
+  Then the admin dashboard should show KPI tiles      # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminDashboardShouldShowKpiTiles()
+22:23:08.686 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin dashboard is displayed with KPI tiles] — Status: PASSED ===
+22:23:15.474 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:22:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:22:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin can navigate to Manage Projects&quot;, &quot;Admin Dashboard&quot;](2)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="32.431">
+    <system-out><![CDATA[
+@smoke @admin @regression
+Scenario: Admin can navigate to Manage Projects     # src/test/resources/features/admin.feature:13
+22:23:15.490 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin can navigate to Manage Projects] ===
+22:23:15.491 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:23:15.507 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 22:25:52 25/05/2026 IST)
+22:23:15.508 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:23:15.509 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:23:15.518 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:23:15.519 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:23:18.038 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:23:18.851 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:23:39.450 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:23:39.647 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:23:39.661 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:23:39.661 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:23:39.707 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:23:39.751 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:23:39.895 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:23:39.935 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:23:40.082 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:23:40.195 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:23:40.195 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting Admin login with: admin@projectsphere.com
+22:23:40.195 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:23:41.307 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:23:41.309 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin logged in successfully
+  Given the admin is logged in                      # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminIsLoggedIn()
+22:23:41.309 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:23:41.417 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Clicked KPI tile: Projects
+22:23:41.419 [main] INFO com.projectsphere.automation.pages.ManageProjectsPage -- ManageProjectsPage initialized
+22:23:41.419 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Navigated to Manage Projects
+  When the admin navigates to Manage Projects       # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminNavigatesToManageProjects()
+22:23:41.420 [main] INFO com.projectsphere.automation.pages.ManageProjectsPage -- ManageProjectsPage initialized
+22:23:41.445 [main] INFO com.projectsphere.automation.pages.ManageProjectsPage -- Projects Workspace page is displayed
+22:23:41.446 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Manage Projects page verified
+  Then the Manage Projects page should be displayed # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theManageProjectsPageShouldBeDisplayed()
+22:23:41.447 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin can navigate to Manage Projects] — Status: PASSED ===
+22:23:47.911 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:23:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:23:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin can navigate to Manage Teams&quot;, &quot;Admin Dashboard&quot;](3)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="31.964">
+    <system-out><![CDATA[
+@smoke @admin @regression
+Scenario: Admin can navigate to Manage Teams     # src/test/resources/features/admin.feature:17
+22:23:47.918 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin can navigate to Manage Teams] ===
+22:23:47.920 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:23:47.928 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 22:25:52 25/05/2026 IST)
+22:23:47.929 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:23:47.929 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:23:47.935 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:23:47.936 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:23:49.842 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:23:50.577 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:24:11.135 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:24:11.412 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:24:11.442 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:24:11.442 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:24:11.488 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:24:11.529 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:24:11.674 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:24:11.739 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:24:11.892 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:24:12.179 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:24:12.179 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting Admin login with: admin@projectsphere.com
+22:24:12.179 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:24:13.265 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:24:13.265 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin logged in successfully
+  Given the admin is logged in                   # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminIsLoggedIn()
+22:24:13.265 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:24:13.414 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Clicked KPI tile: Teams
+22:24:13.424 [main] INFO com.projectsphere.automation.pages.ManageTeamsAdminPage -- ManageTeamsAdminPage initialized
+22:24:13.472 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Navigated to Manage Teams — page fully loaded
+  When the admin navigates to Manage Teams       # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminNavigatesToManageTeams()
+22:24:13.472 [main] INFO com.projectsphere.automation.pages.ManageTeamsAdminPage -- ManageTeamsAdminPage initialized
+22:24:13.505 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Manage Teams page verified
+  Then the Manage Teams page should be displayed # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theManageTeamsPageShouldBeDisplayed()
+22:24:13.505 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin can navigate to Manage Teams] — Status: PASSED ===
+22:24:19.878 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:23:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:23:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin can open the Create Team dialog&quot;, &quot;Admin Dashboard&quot;](4)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="95.092">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e1351a407a4baf9d621c76b5ac45c074" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+]]></failure>
+    <system-out><![CDATA[
+@smoke @admin @regression
+Scenario: Admin can open the Create Team dialog                   # src/test/resources/features/admin.feature:21
+22:24:19.882 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin can open the Create Team dialog] ===
+22:24:19.883 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:24:19.889 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 22:25:52 25/05/2026 IST)
+22:24:19.890 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:24:19.890 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:24:19.894 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:24:19.895 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:24:21.948 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:24:22.652 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:24:43.248 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:24:43.422 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:24:43.442 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:24:43.443 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:24:43.489 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:24:43.530 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:24:43.696 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:24:43.734 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:24:43.851 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:24:43.984 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:24:43.984 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting Admin login with: admin@projectsphere.com
+22:24:43.984 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:24:45.070 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:24:45.070 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin logged in successfully
+  Given the admin is logged in                                    # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminIsLoggedIn()
+22:24:45.070 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:24:45.255 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Clicked KPI tile: Teams
+22:24:45.255 [main] INFO com.projectsphere.automation.pages.ManageTeamsAdminPage -- ManageTeamsAdminPage initialized
+22:24:45.302 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Navigated to Manage Teams — page fully loaded
+  When the admin navigates to Manage Teams                        # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminNavigatesToManageTeams()
+  And the admin clicks New Team button                            # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+
+  Then the Create Team dialog should appear                       # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theCreateTeamDialogShouldAppear()
+  And the dialog should show team name field and project dropdown # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theDialogShouldShowTeamNameAndProjectDropdown()
+
+    Embedding Screenshot on Failure [image/png 132964 bytes]
+
+22:25:48.559 [main] WARN com.projectsphere.automation.cucumber.hooks.CucumberHooks -- Screenshot attached for failed scenario: Admin can open the Create Team dialog
+22:25:48.559 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin can open the Create Team dialog] — Status: FAILED ===
+22:25:54.969 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:24:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:24:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin can create a new team&quot;, &quot;Admin Dashboard&quot;](5)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="97.367">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5817551240b68a48f8968ca5f4192181" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+]]></failure>
+    <system-out><![CDATA[
+@smoke @admin @regression @regression
+Scenario: Admin can create a new team                    # src/test/resources/features/admin.feature:28
+22:25:54.977 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin can create a new team] ===
+22:25:54.978 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:25:54.984 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Removing resolution chrome=146 from cache (expired on Mon May 25 22:25:52 IST 2026)
+22:25:54.998 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 preparing request execution
+22:25:55.009 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 target auth state: UNCHALLENGED
+22:25:55.009 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 proxy auth state: UNCHALLENGED
+22:25:55.009 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+22:25:55.009 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquiring endpoint (3 MINUTES)
+22:25:55.010 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+22:25:55.012 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+22:25:55.022 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 acquired ep-0000000001
+22:25:55.022 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquired endpoint ep-0000000001
+22:25:55.022 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+22:25:55.023 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 connecting endpoint (null)
+22:25:55.024 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+22:25:55.024 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolving remote address
+22:25:55.031 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.111.133]
+22:25:55.032 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.108.133:443 (30 SECONDS)
+22:25:55.033 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Connecting socket to raw.githubusercontent.com/185.199.108.133:443 with timeout 30 SECONDS
+22:25:55.044 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled protocols: [TLSv1.3, TLSv1.2]
+22:25:55.044 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+22:25:55.044 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Starting handshake (null)
+22:25:55.160 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Secure session established
+22:25:55.160 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated protocol: TLSv1.3
+22:25:55.160 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+22:25:55.160 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer principal: CN=*.github.io
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer alternative names: [*.github.com, *.github.io, *.githubusercontent.com, github.com, github.io, githubusercontent.com]
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  issuer principal: CN=R12, O=Let's Encrypt, C=US
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection -- http-outgoing-0 set socket timeout to 3 MINUTES
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.108.133:443 as http-outgoing-0
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connected http-outgoing-0
+22:25:55.162 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 endpoint connected
+22:25:55.163 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+22:25:55.164 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies -- ex-0000000001 Cookie spec selected: strict
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 start execution ex-0000000001
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> accept-encoding: gzip, deflate, br
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> cache-control: max-age=0
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> connection: keep-alive
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> Host: raw.githubusercontent.com
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+22:25:55.175 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Length: 946[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+22:25:55.186 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-GitHub-Request-Id: 75E0:24B09A:1C17E:5052E:6A02393E[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Date: Mon, 25 May 2026 16:55:54 GMT[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Served-By: cache-maa10241-MAA[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Timer: S1779728155.936015,VS0,VE1[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Vary: Authorization,Accept-Encoding[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Fastly-Request-ID: 5af0fd3c408fd7fae06b2fa98308b87e43d6ee77[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Expires: Mon, 25 May 2026 17:00:54 GMT[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Source-Age: 133[\r][\n]"
+22:25:55.188 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[\r][\n]"
+22:25:55.193 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << HTTP/1.1 200 OK
+22:25:55.193 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Connection: keep-alive
+22:25:55.193 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Length: 946
+22:25:55.193 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cache-Control: max-age=300
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Content-Type-Options: nosniff
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Frame-Options: deny
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-XSS-Protection: 1; mode=block
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-GitHub-Request-Id: 75E0:24B09A:1C17E:5052E:6A02393E
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Encoding: gzip
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Accept-Ranges: bytes
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Date: Mon, 25 May 2026 16:55:54 GMT
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Via: 1.1 varnish
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Served-By: cache-maa10241-MAA
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache: HIT
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache-Hits: 1
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Timer: S1779728155.936015,VS0,VE1
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Vary: Authorization,Accept-Encoding
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Access-Control-Allow-Origin: *
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Fastly-Request-ID: 5af0fd3c408fd7fae06b2fa98308b87e43d6ee77
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Expires: Mon, 25 May 2026 17:00:54 GMT
+22:25:55.194 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Source-Age: 133
+22:25:55.201 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 connection can be kept alive for 3 MINUTES
+22:25:55.224 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]X[0xffffffd1]n[0xffffffda]0[0x14]}[0xffffffe7]+,[0xffffffba]J [0x11][0xffffffb2][0x1][0xffffffeb][0xffffffaa]Jy[0xffffffa0][0x19]e[0xffffffd5][0xffffffa8]`[0xffffffd0]v[0xffffff9b][0xffffffe4][0x17][0xffffff93]8`)[0xffffff89]Q[0xffffff9c]@[0xffffffb7][0xffffffa9][0xfffffffb][0xfffffff6]9NB[0xffffffe3]$[0xc]H[0xffffffe0][0xffffffad][0xffffff8e][0xffffff8f][0xffffffef]97[0xffffffdc]s}[0xffffffd3][0xb][0xffffffa0]S[0xffffffc7]A[0xffffffae][0xffffffc9][0xffffff80][0xffffff89]|4G[0xc][0xffffffd7].[0xffffffc0][0xffffffe3][0xffffff92]0`[0x11][0x1b][0x3][0xffffff83][0xffffffba]>".[0x3][0xfffffffe]2\[0xffffffc4]P[0xffffff9f][0xffffff82]9[0x6][0xfffffff8][0x5][0x1b][0xffffff81][0xffffff8f]M@\[0xffffffb1][0xffffffcd][0xffffff96][0xffffffd8][0xffffffb6][0xffffffc3][0x5][0xfffffff5]L[0xffffffec][0xffffff85] [0x13][0xfffffffb][0xffffffd8][0xfffffff0][0xffffffc5][0xffffffe6][0x1a]{[0xffffff8c]P[0xffffffbe]g[0x1][0xffffffcc][0xffffffff]^x[0x18][0xffffffbb]`[0xffffffee][0xffffffd1][\r][0xffffffe3][0x1b][0xffffff9c][0xffffffb2][0xffffffa1]/=[0xffffffea][0xffffffe0][0x16][0xffffffb8]#[0x1e][0xffffffb6][0xffffffe8]K[0xb][0xffffff8c]W[0xffffffd8]C-00[0x17][0xfffffffc][0xffffffa9][0xffffffd8]%[0xffffff81][0xffffffd3][0xc][0xffffffe3][0xffffff9b][0xffffffc4][0xffffffb2][0xffffffb0][0xffffff87]][0x1f][0xffffffd0][0x10][0xffffffe3][0x13]w[0x1][0xffffffd8]/[0xffffffe6]c[0xffffff87][0xffffff81][0xffffffc6]w[0xffffffe2][0xffffff9a]<j[0xb][0xffffff8c][0xffffff88][0x1b][0xfffffff0]0[0xf][0xffffffc8][0x0][0xffffffe3]Y[0xffffffb3][0xffffffc6]9"[0xffffff8a]Z[0xffffff9c]F[0xffffffdb][0x10][0xffffffcb][0xfffffff6]&:[0xffffffd0]~[0xffffffff]A3[0x1c][0xffffffb3][0xffffffcd][0xffffffb3][0x2][0xffffffaa][0xe]6[0xe]1[0xffffffc4]+[0x11][0xffffffaf]a[0xffffffb3][0xffffffe4]|[0xffffffc0]E[0xe][0xffffffd6][0xffffffea][0xffffff97][0xffffff93][0xffffffe9]x8[0xffffffed]?[0xffffffdc][0xffffffdd][0xffffff8f][0x6][0xffffffb3][0x1b][0xffffffa8]Ax[0x9][0xffffffe1][0xffffff90][0xffffffd2][0xffffff85][0xffffff8d]![0xffffff8c]( [0xffffffec][0xffffffaf]V61[0xffffffb8]4[0xffffffea]B[0x18][0x13][0xfffffff1][0xffffffc8]u[0xffffffb0][0xffffffc0]>x[0xffffff8e][0xffffffdf][0xffffff85][0xffffffba]Fv[0xffffffb0][O[0xffffffa7][0xffffff84][0xffffff9e][0xffffffc6][0xffffff8f][0xffffffeb][0xffffffab][0xffffffe6]9Eu[0xf][0x14]5[0x1a][0xffffffeb][0xfffffffd]Q[0x7f]2[0xfffffff9][0xffffffdc][0x7f][0xffffffec][0xffffff9f]SOO[0xffffff9b][0xe][0xffffff86][0xffffffe0][0xffffffdb][0xffffffd3]`[0xfffffffa][0x13]|[0xfffffff9][0xffffffaa]?[0xffffffc1][0x19][0xffffffb5][0xfffffffc][\r][0xfffffff2]p[0xffffffc2][0x16][0xffffff93][0xffffffdd][0xffffff8e]n12D[0xffffffbc][0xffffffa4][0x16]w[0xffffffc6][0xfffffffc][0xffffffa8][0xffffffad][0xffffffe8][0xffffff86]c[0xffffffc2]z[0x16][0xffffffa9]*[0xffffffb1]I@c[0xffffff88]}[0xffffffe5][0xffffff9e][0x17][0x1a][0xffffffa8][0xffffffbf][0xfffffffb][0xffffff83][0xffffffdd][0xfffffff5]M:[0xffffffcd][0xffffffd7][0xc]e:[0xffffffbd]Tv[0xffffffcd]v[0xffffff9c][0xffffffda][0xffffffbd]k[0xffffffd1][0xfffffff6][0xffffffc4][0xffffffa3]f`[0xfffffff8][0xffffffcf]{$][0x1d].)W[0xe][0xffffffe7][0xffffffd4][0xfffffff5][0xffffffa9][0xffffff9c][0xffffffae]SH[0xffffffca]j[0xffffffb2]C[0xffffffbf][0xffffff87].V[0x3][0xffffffe6][0xffffffa9]s[0xffffffe2][0xffffffaa][0xb][0xffffffc1][0xffffffa1]D[0xfffffffb]@Qv[0xfffffffc][0xffffffee][0xfffffff1][0xffffffc1][0xffffff8e][0xffffffb6][0xb][0xffffff9f]=[0xffffffe0] C[0xfffffff0][0xffffffa4]T35J([0xffffffee]1m[0xffffffb4]Z[0xffffffa9]:[0xffffffef][0xffffff9d][0xffffffbc]I1[0xffffff95][0xffffffb7][0xffffffa0][0xfffffff1]L[0x6][0xffffffa4][0xffffffa3][0xfffffff3][0xffffffce][0x14]7[0xffffffbd]-[0xffffff91][0x15][0xffffffad]O[0xffffffd3][0xffffff9b][0x1e][0xffffffe8]ob[0xffffffdb](![0xffffff81]0[0xffffff89][0xffffffbe][0xffffffcf]k9[0x15][0xffffff95];[0xffffffd2][0xffffffe9][0xffffffa4]tS[0xffffffbe][0xffffffaf][0xffffffcb][0xffffffc6][0xffffff8f]I[0xffffffb2]d[0xfffffff5][0xffffffd0][0xfffffffa]z[0xffffffe0][0xffffff85][0x17]G[0xffffffb6][0xffffffac]s[0xffffffe1]{[0xffffff95][0xfffffffc][0x16]1[0xffffffff][0xfffffffd] [0xffffffa5]w[0xffffff90][0xffffffbf]rB[0xffffff8e][0xffffffe8]E[0xffffffb2][0xffffffc1][0xffffff8e][0xffffffd7][0xffffff90][0x13][0xffffff91]wT[0xffffffbc][0x3][0xffffff94][0xfffffff5].pGKar[0xffffffa0]B[0xffffffe7][0xffffffc4][0xffffffbf]O[0xffffff91]g[0xffffffd2][0xffffffb1][0xffffffb8]M[0xffffffc2]Y`[0x1b][0x13][0xfffffff3]E5[0xffffff83][0xffffffc8][0xffffffa5]I[0xc][0xffffff8f]2^C[0x10][0xffffff86]4[0xffffff99][0xffffffdb][0xffffffc9]a[0xffffff82]n_[0xffffff99][0xffffffca][0xffffff9a][0xffffffca][0xffffffd8][0xffffffe5][0xffffff8c]r[0xffffffba];[0xffffffaf][0xffffffca]72[0xffffffc1][0xfffffff5][0xffffffbf][0xffffffbb]R[0xe]Y[0xffffffd2]&[0xffffffaf]Y[0xffffffc6]tr[0xffffffa9][0xffffffdc][0xe][0xffffffb2][0xffffff8c][0xffffffac][0xffffffa8][0xffffffa4]_[0x12][0xffffffe3]V[0xffffff97]U[0xffffff93][0xffffff85][0xffffffe5]=[0xffffffe4]$[0x1c]J[0x8]([0xffffffb8][0xffffff96][0xffffffd2][0xffffffe7]:[0xffffffda]N[0xffffffb8][0xffffff8c]/t[0xffffffd6]6[0x1d][0xffffffe1][0xffffff9c]"[0xffffff83][0xffffffc9][0x8] ]Jb[0x0][0xffffffdf][0xffffffb2][0xffffff88]Q[0xfffffffb]x[0xffffffbf][0x15][0xffffffcd][0xffffff81][0xfffffffc][0xffffff8d]-<[0xffffffe4]0[0x8][0x5][0x5][0xffffff84]Q[0xffffffec]}[0xffffffd5][0xffffff9c]QP[0xffffffc5]][0xffffffa7]QPe[0x16][0xffffff8e]ym[0x14][0xffffffb8][0x6][0xffffffc7][0x1e]K[0xffffffdd][0xffffffab][0xffffff90]|E[0xffffffea][0xffffffd2]7R[0xffffffc4]+[0xffffffd1][0x1e]d[0xfffffff0][0xc][0xffffffff][0x11][0xffffffa3][0xffffffb0]<[0xffffff9d][0xffffff9f][0xffffff88][0xffffffbf][0xfffffff4][0xffffffc8][0xffffffbb]-[0xffffffba]H[0xffffffc8][[0xffffffc9][0xffffff95]Qq][0xfffffff6]-[0xffffff94]S[0xffffff91][0xffffff91][0xffffff91][0xffffffef]j[0xffffffe2]yA3[0xffffff93][0xfffffff0][0x1d]-[0xb][0xffffffcb][0xffffffe0][\n]"
+22:25:55.224 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[0xffffffbb][0xffffff98][0x10]Z[0xffffffd4][0xffffffbc][0xffffffc6][0xffffffd9]`[0xffffffc9]7>[0x9][0x1c]yf[0xffffffe7][0xf]N[0xffffffd3][0xffffffba][0xffffff92][0xfffffff0][0x15]>^%-[0xffffff95]'[0xffffffea]S[0xb]:[0xffffffb4][0xffffffa7][0x15]5[0xffffff96]Sk)=]l[0xffffff85]T[0xfffffffe][0xffffffd4][0xffffff95][0xfffffff4]T[0xffffff9b]-[0xffffffce]$[0xffffffaa]t;[0xffffffac][0xffffffa4]'/([0xffffffdf][0x12][0xffffff92]-%[0xfffffffe]7[0xffffffdf][0xffffffae]/[0xfffffff0][0xffffffd4]in[0xffffff87][0xffffffe3][0xf]u[0xfffffff3][0xffffff94][0x7][0xffffff9c][0xffffffea]i[0x5][0xffffffe0]<[0xffffffba][0xffffffb0]#%[0xffffffaf][0xffffffae][0xffffffa8])[0xffffffe9][0x5]Q/[0xffffffc0][0xc]Y[0xffffffc8]#[0xffffffdb][0xfffffff0]L,[0xffffff8b][0xffffff83]G[0xffffffd0][0xffffffa2][0xffffffd0][0xffffffd1]N*[0xfffffff0]?l[0x1d]d@[0xffffffbe][0x15][0x0][0x0]"
+22:25:55.225 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 releasing valid endpoint
+22:25:55.226 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 releasing endpoint
+22:25:55.226 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+22:25:55.226 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+22:25:55.227 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector -- Detecting chrome version using online commands.properties
+22:25:55.231 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+22:25:55.777 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: 
+22:25:55.778 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+22:25:56.312 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: 
+22:25:56.312 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%LOCALAPPDATA:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+22:25:56.826 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: 
+22:25:56.826 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [REG, QUERY, HKCU\Software\Google\Chrome\BLBeacon, /v, version]
+22:25:57.193 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: HKEY_CURRENT_USER\Software\Google\Chrome\BLBeacon
+    version    REG_SZ    146.0.7680.178
+22:25:57.195 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:25:57.196 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:25:57.196 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Storing resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:25:57.201 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:25:57.201 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:25:59.206 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:25:59.956 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:26:20.579 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:26:20.850 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:26:20.865 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:26:20.865 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:26:20.905 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:26:20.957 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:26:21.181 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:26:21.223 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:26:21.404 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:26:21.621 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:26:21.621 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting Admin login with: admin@projectsphere.com
+22:26:21.622 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:26:22.856 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:26:22.856 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin logged in successfully
+  Given the admin is logged in                           # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminIsLoggedIn()
+22:26:22.857 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:26:23.086 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Clicked KPI tile: Teams
+22:26:23.086 [main] INFO com.projectsphere.automation.pages.ManageTeamsAdminPage -- ManageTeamsAdminPage initialized
+22:26:23.129 [main] INFO com.projectsphere.automation.cucumber.stepdefs.AdminSteps -- Navigated to Manage Teams — page fully loaded
+  When the admin navigates to Manage Teams               # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminNavigatesToManageTeams()
+  And the admin clicks New Team button                   # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+
+  And the admin creates a team with name "BDD Test Team" # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminCreatesATeamWithName(java.lang.String)
+  Then the Edit Team page should be displayed            # com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theEditTeamPageShouldBeDisplayed()
+
+    Embedding Screenshot on Failure [image/png 143375 bytes]
+
+22:27:26.323 [main] WARN com.projectsphere.automation.cucumber.hooks.CucumberHooks -- Screenshot attached for failed scenario: Admin can create a new team
+22:27:26.325 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin can create a new team] — Status: FAILED ===
+22:27:32.324 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:25:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:25:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login page displays all required fields&quot;, &quot;User Login&quot;](6)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="29.179">
+    <system-out><![CDATA[
+@smoke @login
+Scenario: Login page displays all required fields                                   # src/test/resources/features/login.feature:7
+22:27:32.343 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Login page displays all required fields] ===
+22:27:32.343 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:27:32.343 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:27:32.343 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:27:32.343 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:27:32.352 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:27:32.352 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:27:34.114 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:27:34.823 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:27:55.396 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:27:55.475 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:27:55.486 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:27:55.486 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:27:55.507 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:27:55.507 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Login page loaded and ready
+  Given the user is on the login page                                               # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theUserIsOnTheLoginPage()
+22:27:55.507 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:27:55.541 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:27:55.575 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:27:55.637 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- All login page fields verified
+  Then the login page should display email field, password field and Sign In button # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theLoginPageShouldDisplayRequiredFields()
+22:27:55.637 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Login page displays all required fields] — Status: PASSED ===
+22:28:01.519 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:27:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:27:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin logs in with valid credentials&quot;, &quot;User Login&quot;](7)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="32.434">
+    <system-out><![CDATA[
+@smoke @login @admin
+Scenario: Admin logs in with valid credentials               # src/test/resources/features/login.feature:12
+22:28:01.531 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Admin logs in with valid credentials] ===
+22:28:01.531 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:28:01.536 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:28:01.536 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:28:01.536 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:28:01.536 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:28:01.536 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:28:03.592 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:28:05.091 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:28:25.693 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:28:25.861 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:28:25.871 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:28:25.872 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:28:25.901 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:28:25.901 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Login page loaded and ready
+  Given the user is on the login page                        # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theUserIsOnTheLoginPage()
+22:28:25.901 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:28:25.932 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:28:25.995 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:28:26.151 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: admin@projectsphere.com
+22:28:26.169 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:28:26.341 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:28:26.502 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:28:26.502 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin credentials entered and Sign In clicked
+  When the admin enters valid credentials and clicks Sign In # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminEntersValidCredentialsAndClicksSignIn()
+22:28:26.502 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- AdminDashboardPage initialized
+22:28:27.719 [main] INFO com.projectsphere.automation.pages.AdminDashboardPage -- Admin Dashboard is displayed
+22:28:27.719 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Admin dashboard verified
+  Then the admin dashboard should be displayed               # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theAdminDashboardShouldBeDisplayed()
+22:28:27.719 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Admin logs in with valid credentials] — Status: PASSED ===
+22:28:33.965 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:28:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:28:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Project Manager logs in with valid credentials&quot;, &quot;User Login&quot;](8)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="31.614">
+    <system-out><![CDATA[
+@smoke @login @pm
+Scenario: Project Manager logs in with valid credentials  # src/test/resources/features/login.feature:18
+22:28:33.965 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Project Manager logs in with valid credentials] ===
+22:28:33.965 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:28:33.984 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:28:33.984 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:28:33.984 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:28:33.984 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:28:33.984 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:28:36.082 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:28:36.701 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:28:57.291 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:28:57.565 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:28:57.582 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:28:57.582 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:28:57.614 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:28:57.614 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Login page loaded and ready
+  Given the user is on the login page                     # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theUserIsOnTheLoginPage()
+22:28:57.614 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:28:57.650 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:28:57.697 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:28:57.868 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: pm@projectsphere.com
+22:28:57.898 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:28:58.020 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:28:58.190 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:28:58.190 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM credentials entered and Sign In clicked
+  When the PM enters valid credentials and clicks Sign In # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMEntersValidCredentialsAndClicksSignIn()
+22:28:58.190 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:28:59.326 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM dashboard verified
+  Then the PM dashboard should be displayed               # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMDashboardShouldBeDisplayed()
+22:28:59.327 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Project Manager logs in with valid credentials] — Status: PASSED ===
+22:29:05.579 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:28:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:28:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login fails with invalid credentials&quot;, &quot;User Login&quot;](9)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="32.568">
+    <system-out><![CDATA[
+@smoke @login @negative
+Scenario: Login fails with invalid credentials                               # src/test/resources/features/login.feature:24
+22:29:05.595 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [Login fails with invalid credentials] ===
+22:29:05.595 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:29:05.595 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:29:05.595 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:29:05.595 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:29:05.595 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:29:05.595 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:29:07.822 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:29:08.553 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:29:29.153 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:29:29.391 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:29:29.404 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:29:29.404 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:29:29.442 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:29:29.442 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Login page loaded and ready
+  Given the user is on the login page                                        # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theUserIsOnTheLoginPage()
+22:29:29.442 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:29:29.473 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:29:29.512 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:29:29.695 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: invalid@test.com
+22:29:29.712 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:29:29.879 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:29:30.032 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:29:30.032 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Entered email: invalid@test.com and clicked Sign In
+  When the user enters email "invalid@test.com" and password "wrongpassword" # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.theUserEntersEmailAndPassword(java.lang.String,java.lang.String)
+22:29:30.033 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:29:31.691 [main] INFO com.projectsphere.automation.pages.LoginPage -- Error message displayed: 'error_outline
+User not found. Please contact your admin.'
+22:29:31.691 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- Login error message verified
+  Then a login error message should be displayed                             # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.aLoginErrorMessageShouldBeDisplayed()
+22:29:31.691 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [Login fails with invalid credentials] — Status: PASSED ===
+22:29:38.163 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:29:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:29:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;PM dashboard is displayed with quick action cards&quot;, &quot;Project Manager Dashboard&quot;](10)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="34.088">
+    <system-out><![CDATA[
+@smoke @pm @regression
+Scenario: PM dashboard is displayed with quick action cards # src/test/resources/features/pm.feature:10
+22:29:38.163 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [PM dashboard is displayed with quick action cards] ===
+22:29:38.163 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:29:38.179 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:29:38.179 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:29:38.179 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:29:38.179 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:29:38.179 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:29:40.312 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:29:43.360 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:30:03.949 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:30:04.136 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:30:04.140 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:30:04.140 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:30:04.205 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:30:04.252 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:30:04.470 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: pm@projectsphere.com
+22:30:04.506 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:30:04.649 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:30:04.820 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:30:04.820 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting PM login with: pm@projectsphere.com
+22:30:04.822 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:30:05.928 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM logged in successfully
+  Given the PM is logged in                                 # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn()
+22:30:05.937 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:30:05.961 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- PM dashboard quick action cards verified
+  Then the PM dashboard should show quick action cards      # com.projectsphere.automation.cucumber.stepdefs.PMSteps.thePMDashboardShouldShowQuickActionCards()
+22:30:05.961 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [PM dashboard is displayed with quick action cards] — Status: PASSED ===
+22:30:12.251 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:29:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:29:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;PM can navigate to My Projects&quot;, &quot;Project Manager Dashboard&quot;](11)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="32.253">
+    <system-out><![CDATA[
+@smoke @pm @regression
+Scenario: PM can navigate to My Projects        # src/test/resources/features/pm.feature:13
+22:30:12.251 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [PM can navigate to My Projects] ===
+22:30:12.259 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:30:12.280 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:30:12.280 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:30:12.280 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:30:12.280 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:30:12.280 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:30:14.654 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:30:15.419 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:30:35.977 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:30:36.202 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:30:36.214 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:30:36.215 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:30:36.253 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:30:36.298 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:30:36.450 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: pm@projectsphere.com
+22:30:36.485 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:30:36.659 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:30:36.865 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:30:36.867 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting PM login with: pm@projectsphere.com
+22:30:36.867 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:30:38.019 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM logged in successfully
+  Given the PM is logged in                     # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn()
+22:30:38.019 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:30:38.092 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- Navigated to My Projects via KPI tile
+22:30:38.092 [main] INFO com.projectsphere.automation.pages.MyProjectsPMPage -- MyProjectsPMPage initialized
+22:30:38.092 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- Navigated to My Projects
+  When the PM navigates to My Projects          # com.projectsphere.automation.cucumber.stepdefs.PMSteps.thePMNavigatesToMyProjects()
+22:30:38.092 [main] INFO com.projectsphere.automation.pages.MyProjectsPMPage -- MyProjectsPMPage initialized
+22:30:38.121 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- My Projects page verified
+  Then the My Projects page should be displayed # com.projectsphere.automation.cucumber.stepdefs.PMSteps.theMyProjectsPageShouldBeDisplayed()
+22:30:38.121 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [PM can navigate to My Projects] — Status: PASSED ===
+22:30:44.504 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:30:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:30:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;PM can navigate to My Teams&quot;, &quot;Project Manager Dashboard&quot;](12)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="32.453">
+    <system-out><![CDATA[
+@smoke @pm @regression
+Scenario: PM can navigate to My Teams        # src/test/resources/features/pm.feature:17
+22:30:44.504 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [PM can navigate to My Teams] ===
+22:30:44.504 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:30:44.520 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:30:44.520 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:30:44.520 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:30:44.520 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:30:44.520 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:30:46.952 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:30:47.664 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:31:08.214 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:31:08.446 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:31:08.449 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:31:08.462 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:31:08.493 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:31:08.527 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:31:08.663 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: pm@projectsphere.com
+22:31:08.696 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:31:08.814 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:31:08.946 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:31:08.946 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting PM login with: pm@projectsphere.com
+22:31:08.946 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:31:10.125 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM logged in successfully
+  Given the PM is logged in                  # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn()
+22:31:10.125 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:31:10.188 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- Navigated to My Teams via KPI tile
+22:31:10.191 [main] INFO com.projectsphere.automation.pages.MyTeamsPMPage -- MyTeamsPMPage initialized
+22:31:10.191 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- Navigated to My Teams
+  When the PM navigates to My Teams          # com.projectsphere.automation.cucumber.stepdefs.PMSteps.thePMNavigatesToMyTeams()
+22:31:10.191 [main] INFO com.projectsphere.automation.pages.MyTeamsPMPage -- MyTeamsPMPage initialized
+22:31:10.220 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- My Teams page verified
+  Then the My Teams page should be displayed # com.projectsphere.automation.cucumber.stepdefs.PMSteps.theMyTeamsPageShouldBeDisplayed()
+22:31:10.220 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [PM can navigate to My Teams] — Status: PASSED ===
+22:31:16.957 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:30:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:30:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;PM can open the Create Project dialog&quot;, &quot;Project Manager Dashboard&quot;](13)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="52.657">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e5fed34d1369dd043132074b61f8e535" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+	at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+	at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+]]></failure>
+    <system-out><![CDATA[
+@smoke @pm @regression
+Scenario: PM can open the Create Project dialog # src/test/resources/features/pm.feature:21
+22:31:16.973 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [PM can open the Create Project dialog] ===
+22:31:16.973 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:31:16.973 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:31:16.973 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:31:16.973 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:31:16.973 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:31:16.973 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:31:27.174 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:31:28.990 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:31:49.564 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:32:03.110 [main] WARN com.projectsphere.automation.cucumber.context.ScenarioContext -- Could not reach login form: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, findElement {using=xpath, value=//button[normalize-space()='Sign In'] | //a[normalize-space()='Sign In'] | //*[contains(@class,'sign-in') and normalize-space()='Sign In']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+22:32:03.110 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:32:09.006 [main] WARN com.projectsphere.automation.pages.LoginPage -- waitForPageLoad: email field not visible — invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, findElement {using=css selector, value=input[formcontrolname='email']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+  Given the PM is logged in                     # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn()
+      org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+	at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+	at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+
+  When the PM clicks New Project button         # com.projectsphere.automation.cucumber.stepdefs.PMSteps.thePMClicksNewProjectButton()
+  Then the Create Project dialog should appear  # com.projectsphere.automation.cucumber.stepdefs.PMSteps.theCreateProjectDialogShouldAppear()
+22:32:09.012 [main] WARN com.projectsphere.automation.cucumber.hooks.CucumberHooks -- Could not capture screenshot: invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+22:32:09.012 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [PM can open the Create Project dialog] — Status: FAILED ===
+22:32:09.614 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:31:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:31:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;PM can create a new project and it appears in My Projects&quot;, &quot;Project Manager Dashboard&quot;](14)" classname="com.projectsphere.automation.cucumber.runner.CucumberRunner" time="71.465">
+    <system-out><![CDATA[
+@smoke @pm @regression @regression
+Scenario: PM can create a new project and it appears in My Projects         # src/test/resources/features/pm.feature:26
+22:32:09.649 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Starting Scenario: [PM can create a new project and it appears in My Projects] ===
+22:32:09.671 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+22:32:09.776 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=146 in cache (valid until 23:25:57 25/05/2026 IST)
+22:32:09.776 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome146=146.0.7680.165 in cache (valid until 10:25:07 26/05/2026 IST)
+22:32:09.776 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+22:32:09.831 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 146.0.7680.165 found in cache
+22:32:09.833 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\2479309\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+22:32:14.047 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver initialized (Chrome)
+22:32:14.984 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Navigated to: https://projectsphere-8xvr.onrender.com/home
+22:32:35.554 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form not visible — checking for landing page Sign In button...
+22:32:35.800 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Clicked landing page Sign In button.
+22:32:35.803 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Login form ready after Sign In click.
+22:32:35.803 [main] INFO com.projectsphere.automation.pages.LoginPage -- LoginPage initialized with explicit wait=60s
+22:32:35.857 [main] INFO com.projectsphere.automation.pages.LoginPage -- Login page ready. Current URL: https://projectsphere-8xvr.onrender.com/login
+22:32:35.897 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Email field located: placeholder='Enter your email'
+22:32:36.067 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered email: pm@projectsphere.com
+22:32:36.084 [main] DEBUG com.projectsphere.automation.pages.LoginPage -- Password field located
+22:32:36.207 [main] INFO com.projectsphere.automation.pages.LoginPage -- Entered password: [hidden]
+22:32:36.317 [main] INFO com.projectsphere.automation.pages.LoginPage -- Clicked Sign In button (button.btn-sign)
+22:32:36.333 [main] INFO com.projectsphere.automation.pages.LoginPage -- Attempting PM login with: pm@projectsphere.com
+22:32:36.333 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:32:37.815 [main] INFO com.projectsphere.automation.cucumber.stepdefs.LoginSteps -- PM logged in successfully
+  Given the PM is logged in                                                 # com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn()
+22:32:37.815 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:32:37.884 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- Clicked New Project qa-card on PM Dashboard
+22:32:37.894 [main] INFO com.projectsphere.automation.pages.CreateProjectDialog -- CreateProjectDialog initialized
+22:32:37.894 [main] INFO com.projectsphere.automation.pages.CreateProjectDialog -- CreateProjectDialog initialized
+22:32:38.053 [main] INFO com.projectsphere.automation.pages.CreateProjectDialog -- Entered project name: BDD Cucumber Project
+22:32:38.225 [main] INFO com.projectsphere.automation.pages.CreateProjectDialog -- Entered description
+22:32:38.268 [main] INFO com.projectsphere.automation.pages.CreateProjectDialog -- Clicked Create Project button
+22:33:12.855 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:33:12.918 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- Created project: BDD Cucumber Project
+  When the PM creates a project with name "BDD Cucumber Project"            # com.projectsphere.automation.cucumber.stepdefs.PMSteps.thePMCreatesAProjectWithName(java.lang.String)
+22:33:12.918 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- PMDashboardPage initialized
+22:33:13.027 [main] INFO com.projectsphere.automation.pages.PMDashboardPage -- Navigated to My Projects via KPI tile
+22:33:13.027 [main] INFO com.projectsphere.automation.pages.MyProjectsPMPage -- MyProjectsPMPage initialized
+22:33:14.734 [main] INFO com.projectsphere.automation.cucumber.stepdefs.PMSteps -- Project 'BDD Cucumber Project' verified in My Projects list
+  Then the project "BDD Cucumber Project" should appear in My Projects list # com.projectsphere.automation.cucumber.stepdefs.PMSteps.theProjectShouldAppearInMyProjectsList(java.lang.String)
+22:33:14.734 [main] INFO com.projectsphere.automation.cucumber.hooks.CucumberHooks -- === Finished Scenario: [PM can create a new project and it appears in My Projects] — Status: PASSED ===
+22:33:21.079 [main] INFO com.projectsphere.automation.cucumber.context.ScenarioContext -- Cucumber WebDriver quit.
+]]></system-out>
+    <system-err><![CDATA[May 25, 2026 10:32:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+May 25, 2026 10:32:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 642.8 s <<< FAILURE! -- in TestSuite
+com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario["Admin can open the Create Team dialog", "Admin Dashboard"](4) -- Time elapsed: 95.09 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64787}, goog:processID: 1900, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64787/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1351a407a4baf9d621c76b5ac45c074
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:23)
+
+com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario["Admin can create a new team", "Admin Dashboard"](5) -- Time elapsed: 97.37 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.ax-modal-backdrop (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54941}, goog:processID: 16808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54941/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5817551240b68a48f8968ca5f4192181
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.projectsphere.automation.cucumber.stepdefs.AdminSteps.theAdminClicksNewTeamButton(AdminSteps.java:109)
+	at ✽.the admin clicks New Team button(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/admin.feature:30)
+
+com.projectsphere.automation.cucumber.runner.CucumberRunner.runScenario["PM can open the Create Project dialog", "Project Manager Dashboard"](13) -- Time elapsed: 52.66 s <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5fed34d1369dd043132074b61f8e535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2479309\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62157}, goog:processID: 24328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62157/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fed34d1369dd043132074b61f8e535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.projectsphere.automation.pages.LoginPage.waitForPageLoad(LoginPage.java:72)
+	at com.projectsphere.automation.cucumber.stepdefs.LoginSteps.thePMIsLoggedIn(LoginSteps.java:54)
+	at ✽.the PM is logged in(file:///C:/Users/2479309/Desktop/Project%20Sphere/ProjectSphere-Automation/src/test/resources/features/pm.feature:8)
+

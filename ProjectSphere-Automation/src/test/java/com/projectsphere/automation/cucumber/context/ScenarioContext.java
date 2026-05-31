@@ -34,7 +34,13 @@ public class ScenarioContext {
                 "--start-maximized",
                 "--disable-notifications",
                 "--disable-infobars",
-                "--disable-blink-features=AutomationControlled"
+                "--disable-blink-features=AutomationControlled",
+                // Stability flags — prevent renderer crashes during slow network / cold starts
+                "--disable-dev-shm-usage",        // avoid /dev/shm OOM on Linux
+                "--no-sandbox",                   // required in some CI/container environments
+                "--disable-gpu",                  // prevent GPU process crashes
+                "--disable-extensions",           // reduce memory footprint
+                "--disable-background-networking" // reduce spurious network activity
         );
         opts.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         opts.setExperimentalOption("useAutomationExtension", false);

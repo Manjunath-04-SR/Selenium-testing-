@@ -25,6 +25,7 @@
         <commons-io.version>2.16.1</commons-io.version>
         <surefire.version>3.3.0</surefire.version>
         <cucumber.version>7.18.0</cucumber.version>
+        <cucumber.reporting.version>5.8.1</cucumber.reporting.version>
         <!-- Default values – override via -Dbrowser=firefox etc. -->
         <browser>chrome</browser>
         <env>dev</env>
@@ -127,6 +128,8 @@
                         <env>${env}</env>
                     </systemPropertyVariables>
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                    <!-- Allow verify phase (Masterthought report) to run even when tests fail -->
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 
@@ -138,6 +141,37 @@
                     <source>11</source>
                     <target>11</target>
                 </configuration>
+            </plugin>
+
+            <!-- ── Masterthought Cucumber Reporting ────────────────────────── -->
+            <!-- Generates a rich standalone HTML report from cucumber.json     -->
+            <!-- Run: mvn verify -DsuiteFile=src/test/resources/cucumber-testng.xml -->
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>${cucumber.reporting.version}</version>
+                <executions>
+                    <execution>
+                        <id>cucumber-html-report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>ProjectSphere Automation</projectName>
+                            <skip>false</skip>
+                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                            <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
+                            <jsonFiles>
+                                <param>**/*.json</param>
+                            </jsonFiles>
+                            <classificationFiles>
+                                <param>src/test/resources/report.properties</param>
+                            </classificationFiles>
+                            <checkBuildResult>false</checkBuildResult>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

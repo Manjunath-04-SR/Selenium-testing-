@@ -8,13 +8,18 @@ import org.testng.annotations.DataProvider;
  * TestNG-based Cucumber runner.
  *
  * Run via IntelliJ:  Right-click → Run 'CucumberRunner'
- * Run via Maven:     mvn test -DsuiteFile=src/test/resources/cucumber-testng.xml
+ *
+ * Run full Cucumber suite + generate HTML report:
+ *   mvn verify -DsuiteFile=src/test/resources/cucumber-testng.xml
  *
  * Run only @smoke tags:
- *   mvn test -DsuiteFile=src/test/resources/cucumber-testng.xml -Dcucumber.filter.tags="@smoke"
+ *   mvn verify -DsuiteFile=src/test/resources/cucumber-testng.xml -Dcucumber.filter.tags="@smoke"
  *
  * Run only @admin tags:
- *   mvn test -DsuiteFile=src/test/resources/cucumber-testng.xml -Dcucumber.filter.tags="@admin"
+ *   mvn verify -DsuiteFile=src/test/resources/cucumber-testng.xml -Dcucumber.filter.tags="@admin"
+ *
+ * Report location after run:
+ *   target/cucumber-reports/cucumber-html-reports/overview-features.html
  */
 @CucumberOptions(
         features = "src/test/resources/features",
@@ -24,8 +29,8 @@ import org.testng.annotations.DataProvider;
         },
         plugin   = {
             "pretty",
-            "html:target/cucumber-reports/cucumber-report.html",
-            "json:target/cucumber-reports/cucumber.json"
+            "json:target/cucumber-reports/cucumber.json",
+            "junit:target/cucumber-reports/cucumber.xml"
         },
         monochrome = true,
         tags       = "not @wip"

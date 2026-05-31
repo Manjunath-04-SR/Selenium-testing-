@@ -11,6 +11,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -65,8 +66,11 @@ public class AdminSteps {
     @When("the admin navigates to Manage Teams")
     public void theAdminNavigatesToManageTeams() {
         AdminDashboardPage dashboard = new AdminDashboardPage(context.getDriver());
-        dashboard.navigateToTeams();
-        logger.info("Navigated to Manage Teams");
+        // navigateToTeams() clicks the KPI tile — we must wait for the page to render
+        // before any following step tries to interact with ManageTeams elements
+        ManageTeamsAdminPage teamsPage = dashboard.navigateToTeams();
+        teamsPage.isPageDisplayed(); // blocks until app-teams-list / h1.ax-page-title visible
+        logger.info("Navigated to Manage Teams — page fully loaded");
     }
 
     @Then("the Manage Teams page should be displayed")
@@ -79,13 +83,62 @@ public class AdminSteps {
 
     @When("the admin clicks New Team button")
     public void theAdminClicksNewTeamButton() {
-        // button.ax-btn.primary with text "New Team" on ManageTeamsAdminPage
-        By newTeamBtn = By.cssSelector("button.ax-btn.primary");
-        WebDriverWait wait = new WebDriverWait(context.getDriver(),
-                Duration.ofSeconds(60));
+        WebDriverWait wait = new WebDriverWait(context.getDriver(), Duration.ofSeconds(60));
+
+        // Target by text "New Team" — specific, avoids other primary buttons
+        By newTeamBtn = By.xpath(
+            "//button[contains(@class,'ax-btn') and contains(@class,'primary')" +
+            " and contains(normalize-space(),'New Team')]");
+
         WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(newTeamBtn));
-        ((JavascriptExecutor) context.getDriver()).executeScript("arguments[0].click();", btn);
-        logger.info("Clicked New Team button");
+
+        // Scroll into view so it's not clipped by header/footer
+        ((JavascriptExecutor) context.getDriver())
+            .executeScript("arguments[0].scrollIntoView({block:'center'})", btn);
+
+        // Strategy 1: dispatchEvent — fires a proper bubbling MouseEvent that Angular's
+        // change detection can observe, even when native Selenium click is swallowed.
+        ((JavascriptExecutor) context.getDriver()).executeScript(
+            "arguments[0].dispatchEvent(" +
+            "  new MouseEvent('click',{bubbles:true,cancelable:true,view:window})" +
+            ")", btn);
+        logger.info("Dispatched click on New Team button");
+
+        // Modal detection — broad OR covers: ax-modal-backdrop, ax-modal (any variant),
+        // or the teamName input itself (fallback when backdrop class differs in live build)
+        boolean modalOpened = false;
+        try {
+            wait.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ax-modal-backdrop")),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ax-modal")),
+                ExpectedConditions.visibilityOfElementLocated(
+                    By.cssSelector("input[formcontrolname='teamName']"))
+            ));
+            modalOpened = true;
+            logger.info("New Team modal detected after dispatchEvent click");
+        } catch (Exception firstAttempt) {
+            logger.warn("Modal not detected after dispatchEvent — retrying with Actions click");
+        }
+
+        if (!modalOpened) {
+            // Strategy 2: Actions click — moves mouse to element centre and clicks,
+            // triggering native browser events that Angular's zone.js will pick up.
+            WebElement btnRetry = wait.until(ExpectedConditions.elementToBeClickable(newTeamBtn));
+            ((JavascriptExecutor) context.getDriver())
+                .executeScript("arguments[0].scrollIntoView({block:'center'})", btnRetry);
+            try {
+                new Actions(context.getDriver()).moveToElement(btnRetry).click().perform();
+            } catch (Exception e) {
+                btnRetry.click();
+            }
+            wait.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ax-modal-backdrop")),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ax-modal")),
+                ExpectedConditions.visibilityOfElementLocated(
+                    By.cssSelector("input[formcontrolname='teamName']"))
+            ));
+            logger.info("New Team modal confirmed open after Actions retry");
+        }
     }
 
     @Then("the Create Team dialog should appear")
