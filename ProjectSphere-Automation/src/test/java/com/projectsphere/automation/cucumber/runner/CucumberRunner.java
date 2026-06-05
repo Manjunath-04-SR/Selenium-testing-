@@ -22,7 +22,7 @@ import org.testng.annotations.DataProvider;
  *   target/cucumber-reports/cucumber-html-reports/overview-features.html
  */
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/featuresd",
         glue     = {
             "com.projectsphere.automation.cucumber.hooks",
             "com.projectsphere.automation.cucumber.stepdefs"
